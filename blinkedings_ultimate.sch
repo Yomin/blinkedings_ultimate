@@ -15139,8 +15139,8 @@ grid 5.08 mm</description>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="T1" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC857C" value="BC807-16"/>
 <part name="R7" library="resistor" deviceset="R-EU_" device="R0603" value="22k"/>
-<part name="R8" library="resistor" deviceset="R-EU_" device="R0603" value="22k"/>
-<part name="R9" library="resistor" deviceset="R-EU_" device="R0603" value="22k"/>
+<part name="R8" library="resistor" deviceset="R-EU_" device="R0603" value="27k"/>
+<part name="R9" library="resistor" deviceset="R-EU_" device="R0603" value="27k"/>
 <part name="R10" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="R11" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="R12" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
@@ -15463,15 +15463,15 @@ grid 5.08 mm</description>
 </net>
 <net name="N$14" class="0">
 <segment>
-<wire x1="142.24" y1="-7.62" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="-38.1" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="(AIN1)PB1"/>
 <wire x1="142.24" y1="33.02" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="PAD2" gate="1" pin="P"/>
 <wire x1="144.78" y1="33.02" x2="154.94" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="38.1" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
 <junction x="144.78" y="33.02"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="-7.62" x2="147.32" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="-38.1" x2="147.32" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -15489,14 +15489,14 @@ grid 5.08 mm</description>
 </net>
 <net name="N$16" class="0">
 <segment>
-<wire x1="137.16" y1="30.48" x2="137.16" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="30.48" x2="137.16" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="(OC0A)PB2"/>
 <wire x1="137.16" y1="30.48" x2="154.94" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="PAD3" gate="1" pin="P"/>
 <wire x1="137.16" y1="38.1" x2="137.16" y2="30.48" width="0.1524" layer="91"/>
 <junction x="137.16" y="30.48"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="-38.1" x2="147.32" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="-7.62" x2="137.16" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CLK" class="0">
