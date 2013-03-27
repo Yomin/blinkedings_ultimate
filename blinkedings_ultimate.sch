@@ -15137,7 +15137,7 @@ grid 5.08 mm</description>
 <part name="U$3" library="avr-6" deviceset="TINY2313*" device="-*S*"/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
-<part name="T1" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC857C" value="BC807-16"/>
+<part name="T1" library="transistor" deviceset="*-PNP-" device="SOT23-BEC" technology="BC857C" value="BC807-40"/>
 <part name="R7" library="resistor" deviceset="R-EU_" device="R0603" value="22k"/>
 <part name="R8" library="resistor" deviceset="R-EU_" device="R0603" value="27k"/>
 <part name="R9" library="resistor" deviceset="R-EU_" device="R0603" value="27k"/>
@@ -15146,7 +15146,7 @@ grid 5.08 mm</description>
 <part name="R12" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="R13" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
-<part name="R14" library="resistor" deviceset="R-EU_" device="R0603" value="5.6k"/>
+<part name="R14" library="resistor" deviceset="R-EU_" device="R0603" value="12k"/>
 </parts>
 <sheets>
 <sheet>
