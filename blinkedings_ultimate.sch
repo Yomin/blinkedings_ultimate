@@ -15117,9 +15117,9 @@ grid 5.08 mm</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="resistor" deviceset="CPOL-EU" device="SMCC" value="4.7uF"/>
 <part name="U$2" library="usb" deviceset="USB-PLUG" device="-A-SMD"/>
-<part name="PAD1" library="wirepad" deviceset="SMD2" device="" value="SCK"/>
+<part name="PAD1" library="wirepad" deviceset="SMD2" device="" value="MOSI"/>
 <part name="PAD2" library="wirepad" deviceset="SMD2" device="" value="MISO"/>
-<part name="PAD3" library="wirepad" deviceset="SMD2" device="" value="MOSI"/>
+<part name="PAD3" library="wirepad" deviceset="SMD2" device="" value="SCK"/>
 <part name="PAD4" library="wirepad" deviceset="SMD2" device="" value="RESET"/>
 <part name="R4" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
@@ -15172,8 +15172,8 @@ grid 5.08 mm</description>
 <instance part="C3" gate="G$1" x="12.7" y="73.66"/>
 <instance part="U$2" gate="G$1" x="25.4" y="33.02"/>
 <instance part="PAD1" gate="1" x="152.4" y="40.64" rot="R270"/>
-<instance part="PAD2" gate="1" x="144.78" y="40.64" rot="R270"/>
-<instance part="PAD3" gate="1" x="137.16" y="40.64" rot="R270"/>
+<instance part="PAD2" gate="1" x="137.16" y="40.64" rot="R270"/>
+<instance part="PAD3" gate="1" x="144.78" y="40.64" rot="R270"/>
 <instance part="PAD4" gate="1" x="208.28" y="25.4" rot="R270"/>
 <instance part="R4" gate="G$1" x="215.9" y="15.24"/>
 <instance part="P+4" gate="VCC" x="223.52" y="25.4"/>
@@ -15461,42 +15461,17 @@ grid 5.08 mm</description>
 <pinref part="U$3" gate="G$1" pin="(RXD)PD0"/>
 </segment>
 </net>
-<net name="N$14" class="0">
-<segment>
-<wire x1="142.24" y1="-38.1" x2="142.24" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="(AIN1)PB1"/>
-<wire x1="142.24" y1="33.02" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="PAD2" gate="1" pin="P"/>
-<wire x1="144.78" y1="33.02" x2="154.94" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="38.1" x2="144.78" y2="33.02" width="0.1524" layer="91"/>
-<junction x="144.78" y="33.02"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="-38.1" x2="147.32" y2="-38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<wire x1="139.7" y1="35.56" x2="139.7" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="(AIN0)PB0"/>
-<wire x1="139.7" y1="35.56" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="PAD1" gate="1" pin="P"/>
-<wire x1="152.4" y1="35.56" x2="154.94" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="38.1" x2="152.4" y2="35.56" width="0.1524" layer="91"/>
-<junction x="152.4" y="35.56"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="-22.86" x2="147.32" y2="-22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$16" class="0">
 <segment>
-<wire x1="137.16" y1="30.48" x2="137.16" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="(OC0A)PB2"/>
-<wire x1="137.16" y1="30.48" x2="154.94" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="PAD3" gate="1" pin="P"/>
-<wire x1="137.16" y1="38.1" x2="137.16" y2="30.48" width="0.1524" layer="91"/>
-<junction x="137.16" y="30.48"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="-7.62" x2="137.16" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="17.78" x2="142.24" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="-7.62" x2="142.24" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="(UCSK)PB7"/>
+<wire x1="142.24" y1="17.78" x2="144.78" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="PAD3" gate="1" pin="P"/>
+<wire x1="144.78" y1="17.78" x2="154.94" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="38.1" x2="144.78" y2="17.78" width="0.1524" layer="91"/>
+<junction x="144.78" y="17.78"/>
 </segment>
 </net>
 <net name="CLK" class="0">
@@ -15639,6 +15614,31 @@ grid 5.08 mm</description>
 <junction x="119.38" y="17.78"/>
 <wire x1="119.38" y1="17.78" x2="116.84" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="22.86" x2="139.7" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="-22.86" x2="147.32" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="(MOSI)PB5"/>
+<wire x1="139.7" y1="22.86" x2="152.4" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="PAD1" gate="1" pin="P"/>
+<wire x1="152.4" y1="22.86" x2="154.94" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="38.1" x2="152.4" y2="22.86" width="0.1524" layer="91"/>
+<junction x="152.4" y="22.86"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<wire x1="137.16" y1="-38.1" x2="137.16" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="137.16" y1="-38.1" x2="147.32" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="(MISO)PB6"/>
+<wire x1="154.94" y1="20.32" x2="137.16" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="PAD2" gate="1" pin="P"/>
+<wire x1="137.16" y1="38.1" x2="137.16" y2="20.32" width="0.1524" layer="91"/>
+<junction x="137.16" y="20.32"/>
 </segment>
 </net>
 </nets>
